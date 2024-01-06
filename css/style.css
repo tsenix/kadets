@@ -994,6 +994,10 @@ h6 {
   overflow-x: scroll;
 }
 
+.team-list__table:last-child {
+  margin-bottom: 15px;
+}
+
 .team-list__table table {
   width: 100%;
   border-collapse: collapse;
