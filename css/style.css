@@ -997,6 +997,7 @@ h6 {
   scrollbar-color: #D9D9D9 transparent;
   /* «цвет ползунка» «цвет полосы скроллбара» */
   scrollbar-width: 12px;
+  -webkit-overflow-scrolling: touch;
 }
 
 .team-list__table::-webkit-scrollbar {
