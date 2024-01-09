@@ -5537,6 +5537,17 @@ PERFORMANCE OF THIS SOFTWARE.
         }
         window.addEventListener("resize", handleResize);
         window.addEventListener("load", handleResize);
+        function handleSizeListItem() {
+            const lis = document.querySelectorAll(".header__menu-item");
+            for (let i = 0; i < lis.length; i++) {
+                const li = lis[i];
+                li.style.fontWeight = 700;
+                li.style.width = li.getBoundingClientRect().width + "px";
+                li.style.fontWeight = 300;
+                console.log(li);
+            }
+        }
+        window.addEventListener("load", handleSizeListItem);
         window["FLS"] = true;
         menuInit();
         spollers();
